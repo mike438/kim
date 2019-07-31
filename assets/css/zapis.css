@@ -1,0 +1,51 @@
+.bonus-output{
+	align-content: center;
+	min-width: 50px;
+}
+.card-columns {
+  @include media-breakpoint-only(lg) {
+    column-count: 4;
+  }
+  @include media-breakpoint-only(xl) {
+    column-count: 5;
+  }
+}
+.card-body a{
+	margin-bottom: 0.5rem;
+	margin-right:0.5rem;
+}
+.card-body a.btn {
+	min-width:70px;
+}
+.card-deck .card{
+	margin: 1rem;
+}
+@media (min-width: 576px) { 
+	.card-deck .card{
+		min-width: 220px;
+	}
+}
+@media (min-width: 768px) { 
+	.card-deck .card{
+		min-width: 240px;
+	}
+}
+
+
+@media (min-width: 992px) {
+		.card-deck .card{
+		min-width: 240px;
+	}
+}
+
+@media (min-width: 1200px) { 
+	.card-deck .card{
+		min-width: 280px;
+		max-width: 330px
+	}
+}
+.gj-picker-bootstrap table tr td {
+	color:red !important;
+}
+
+.card-columns .card{display: inline-block;column-break-inside: avoid;}

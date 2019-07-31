@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap - Prebuilt Layout</title>
+
+    <!-- Bootstrap -->
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="file:///C|/Users/Mike/Desktop/zapis.css" rel="stylesheet" type="text/css">
+<script src="https://kit.fontawesome.com/899787be67.js"></script>
+	  
+    <link href="https://unpkg.com/gijgo@1.9.13/css/gijgo.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+    <div class="container">
+		<div class="row text-center">
+		   <div id="bonus-controls " class="w-100">
+			   <div class="mb-3 input-group col-sm-12 col-md-8 col-xl-5 ">
+				   <input class="form-control bonus-input " type="text" value="" placeholder="Номер скидочной карты" aria-label="Номер скидочной карты"/>
+				   <div class="input-group-append bonus-search-button">
+					   <span class="input-group-text "><i class="fas fa-search"></i></span>
+					   <span class="input-group-text bg-white">Скидка:</span>
+					   <span class="input-group-text bonus-output "></span>
+				   </div>
+			   </div>
+		   </div>
+		</div>
+		<form id="record-controls" class="w-100">
+			<div class="form-row mb-3">
+				<div class="col-md-4 mb-3">
+					<label for="inputDate">Выберите дату</label>
+					<input id="inputDate" width="180" />
+				</div>
+				
+			</div>
+			<div class="form-row mb-5">
+				<div class="col-md-4 mb-3">
+					<label for="inputState">Выберите отделение</label>
+					<select id="inputState" class="form-control schedule-select schedule-department-select">
+						<option value="0" selected>Все отделения</option>
+						<option value="1">Поликлиническое отделение</option>
+						<!--
+						<option value="2">Two</option>
+						<option value="3">Three</option>
+						-->
+					</select> 
+				</div>
+				<div class="col-md-4 mb-3">
+					<label for="inputSpec">Выберите специализацию</label>
+					<select id="inputSpec" class="form-control schedule-select schedule-spec-select">
+						<option value="0" selected="">Все специалисты</option>
+						<option value="1">Анестезиолог</option>
+						<option value="28">Врач ультразвуковой диагностики</option>
+						<option value="29">Врач эндоскопист</option>
+						<option value="2">Гинеколог</option>
+						<option value="26">Лаборант</option>
+						<option value="4">Нейрохирург</option>
+						<option value="5">Онколог</option>
+						<option value="6">Оториноларинголог</option>
+						<option value="7">Проктолог</option>
+						<option value="8">Травматолог</option>
+						<option value="9">Уролог</option>
+						<option value="25">Флеболог</option>
+					</select> 
+				</div>
+				<div class="col-md-4 mb-3">
+					<label for="inputSpec">Выберите доктора</label>
+					<select id="inputDoctor" class="form-control schedule-select schedule-doctor-select">
+						<option value="0" data-spec="0" selected="">Все врачи</option>
+						<option value="152" data-spec="6">Анисимов Николай Анатольевич</option>
+						<option value="159" data-spec="1">Большаков Болеслав Николаевич</option>
+						<option value="187" data-spec="28">Бочарова Ольга Александровна</option>
+						<option value="186" data-spec="28">Брагина Елена Викторовна</option>
+						<option value="164" data-spec="26">Додонова Татьяна Федоровна</option>
+						<option value="142" data-spec="1">Долгов Андрей Олегович</option>
+						<option value="102" data-spec="6">Елагин Владимир Николаевич</option>
+						<option value="133" data-spec="6">Ермин Константин Юрьевич</option>
+						<option value="189" data-spec="29">Зорькин Виктор Иванович</option>
+						<option value="167" data-spec="8">Калачин Константин Олегович</option>
+						<option value="178" data-spec="6">Кимяев Евгений Викторович</option>
+						<option value="195" data-spec="29">Кияйкина Оксана Михайловна</option>
+						<option value="114" data-spec="7">Кулыгин Игорь Владимирович</option>
+						<option value="163" data-spec="9">Майоров Алексей Валентинович</option>
+						<option value="166" data-spec="2">Майорова Ольга Владимировна</option>
+						<option value="188" data-spec="28">Малашкина Ольга Александровна</option>
+						<option value="151" data-spec="2">Матюшкина Татьяна Борисовна</option>
+						<option value="173" data-spec="4">Просвирнин Владимир Вадимович</option>
+						<option value="193" data-spec="4">Рогов Дмитрий Юрьевич</option>
+						<option value="106" data-spec="2">Рыбина Елена Александровна</option>
+						<option value="184" data-spec="9">Савлук Павел Алексеевич</option>
+						<option value="199" data-spec="5">Сайко Михаил Александрович</option>
+						<option value="191" data-spec="25">Семенов Евгений Павлович</option>
+						<option value="200" data-spec="29">Силаев Александр Владимирович</option>
+						<option value="185" data-spec="28">Шумкин Николай Валентинович</option>
+						<option value="143" data-spec="25">Щербаков Алексей Владимирович</option>
+						<option value="115" data-spec="9">Юдин Алексей Александрович</option>
+					</select> 
+				</div>
+			</div>
+			
+		</form>
+
+		<div class="row">
+			<div class="card-deck shedule-cards">
+				<div class="card border-primary text-center">
+					<div class="card-header">
+						<h5 class="card-title schedule-doc-name">Анисимов <br>Николай Анатольевич</h5>
+						<p class="card-text schedule-spec-name">Отоларинголог</p>
+						<a href="#" class="btn btn-primary date-btn">31-07-2019<i class="ml-2 fas fa-calendar-day"></i></a>
+						<a href="#" class="btn btn-primary date-btn">На неделю<i class="ml-2 fas fa-calendar-week"></i></a>
+					</div>
+					<div class="card-body">
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						
+					</div>
+					<div class="card-footer"></div>
+				</div>
+				<div class="card border-primary text-center">
+					<div class="card-header">
+						<h5 class="card-title schedule-doc-name">Анисимов <br>Николай Анатольевич</h5>
+						<p class="card-text schedule-spec-name">Отоларинголог</p>
+						<a href="#" class="btn btn-primary date-btn">31-07-2019<i class="ml-2 fas fa-calendar-day"></i></a>
+						<a href="#" class="btn btn-primary date-btn">На неделю<i class="ml-2 fas fa-calendar-week"></i></a>
+					</div>
+					<div class="card-body">
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						
+					</div>
+					<div class="card-footer"></div>
+				</div>				
+				<div class="card border-primary text-center">
+					<div class="card-header">
+						<h5 class="card-title schedule-doc-name">Анисимов <br>Николай Анатольевич</h5>
+						<p class="card-text schedule-spec-name">Отоларинголог</p>
+						<a href="#" class="btn btn-primary date-btn">31-07-2019<i class="ml-2 fas fa-calendar-day"></i></a>
+						<a href="#" class="btn btn-primary date-btn">На неделю<i class="ml-2 fas fa-calendar-week"></i></a>
+					</div>
+					<div class="card-body">
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						
+					</div>
+					<div class="card-footer"></div>
+				</div>				
+				<div class="card border-primary text-center">
+					<div class="card-header">
+						<h5 class="card-title schedule-doc-name">Анисимов <br>Николай Анатольевич</h5>
+						<p class="card-text schedule-spec-name">Отоларинголог</p>
+						<a href="#" class="btn btn-primary date-btn">31-07-2019<i class="ml-2 fas fa-calendar-day"></i></a>
+						<a href="#" class="btn btn-primary date-btn">На неделю<i class="ml-2 fas fa-calendar-week"></i></a>
+					</div>
+					<div class="card-body">
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						
+					</div>
+					<div class="card-footer"></div>
+				</div>				
+				<div class="card border-primary text-center">
+					<div class="card-header">
+						<h5 class="card-title schedule-doc-name">Анисимов <br>Николай Анатольевич</h5>
+						<p class="card-text schedule-spec-name">Отоларинголог</p>
+						<a href="#" class="btn btn-primary date-btn">31-07-2019<i class="ml-2 fas fa-calendar-day"></i></a>
+						<a href="#" class="btn btn-primary date-btn">На неделю<i class="ml-2 fas fa-calendar-week"></i></a>
+					</div>
+					<div class="card-body">
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						<a href="#" class="btn btn-primary disabled" >08-30</a>
+						
+					</div>
+					<div class="card-footer"></div>
+				</div>
+			</div>
+		   
+          <div class="col-md-4">
+             <div class="card">
+                <img class="card-img-top" src="file:///C|/Users/Mike/Desktop/images/card-img.png" alt="Card image cap">
+                <div class="card-body">
+                   <h4 class="card-title">Card title</h4>
+                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   <br><br>
+                   <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+             </div>
+          </div>
+          <div class="col-md-4">
+             <div class="card">
+                <div class="card-body">
+                   <h5 class="card-title">Card title</h5>
+                   <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                   <a href="#" class="card-link">Card link</a>
+                   <a href="#" class="card-link">Another link</a>
+                </div>
+             </div>
+             <br>
+             <br/>
+             <div class="card">
+                <div class="card-header">
+                   Featured
+                </div>
+                <ul class="list-group list-group-flush">
+                   <li class="list-group-item">Cras justo odio</li>
+                   <li class="list-group-item">Dapibus ac facilisis in</li>
+                   <li class="list-group-item">Vestibulum at eros</li>
+                </ul>
+             </div>
+          </div>
+          <div class="col-md-4">
+             <div class="card">
+                <img class="card-img-top" src="file:///C|/Users/Mike/Desktop/images/card-img.png" alt="Card image cap">
+                <div class="card-body">
+                   <h5 class="card-title">Card title</h5>
+                   <p class="card-text">Some text to build on the card's content.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                   <li class="list-group-item">Cras justo odio</li>
+                   <li class="list-group-item">Dapibus ac facilisis in</li>
+                </ul>
+                <div class="card-body">
+                   <a href="#" class="card-link">Card link</a>
+                   <a href="#" class="card-link">Another link</a>
+                </div>
+             </div>
+          </div>
+       </div>
+       <br/>
+       <br/>
+       <div class="row">
+          <div class=" col-md-4"> Click here to select this<strong> column.</strong> Always place your content within a column. Columns are indicated by a dashed blue line. </div>
+          <div class="col-md-4 "> You can <strong>resize a column</strong> using the handle on the right. Drag it to increase or reduce the number of columns.</div>
+          <div class="col-md-4 "> You can <strong>offset a column</strong> using the handle on the left. Drag it to increase or reduce the offset. </div>
+       </div>
+       <br/>
+       <br/>
+       <div class="row">
+          <div class="col-md-6 text-center">
+             <div class="card">
+                <div class="card-body">
+                   <h3>Adding <strong>Buttons</strong></h3>
+                   <p>Quickly add buttons to your page by using the button component in the insert panel. </p>
+                   <button type="button" class="btn btn-info btn-md">Info Button</button>
+                   <button type="button" class="btn btn-success btn-md">Success Button</button>
+                </div>
+             </div>
+          </div>
+          <div class="text-center col-md-6">
+             <div class="card">
+                <div class="card-body">
+                   <h3>Adding <strong>Badges</strong></h3>
+                   <p>Using the insert panel, add badge to your page by using the badge component.</p>
+                   <span class="badge badge-info">Info Badge</span> <span class="badge badge-danger">Danger Badge</span>
+                </div>
+             </div>
+          </div>
+       </div>
+       <br>
+       <hr>
+       <div class="row">
+          <div class="text-center col-lg-6 offset-lg-3">
+             <h4>Footer </h4>
+             <p>Copyright &copy; 2015 &middot; All Rights Reserved &middot; <a href="#" >My Website</a></p>
+          </div>
+       </div>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+    <script src="/assets/js/jquery-3.4.1.min.js"></script>
+<script src="https://unpkg.com/gijgo@1.9.13/js/gijgo.min.js" type="text/javascript"></script>
+	  <script src="https://unpkg.com/gijgo@1.9.13/js/messages/messages.ru-ru.js" type="text/javascript"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed --> 
+    <script src="/assets/js/popper.min.js"></script>
+    <script src="/assets/js/bootstrap.js"></script>
+	  <script>
+		  today = new Date(new Date().getFullYear(), new Date().getMonth(), new Date().getDate());
+		  var options = {
+			  year: 'numeric',
+			  month: '2-digit',
+			  day: 'numeric',
+			};
+        $('#inputDate').datepicker({
+            uiLibrary: 'bootstrap4',
+			iconsLibrary: 'fontawesome',
+			icons: {
+				rightIcon: '<i class="fas fa-calendar-day"></i>'
+			},
+			locale: 'ru-ru',
+			value: today.toLocaleString("ru",options),
+			format: 'dd.mm.yyyy',
+			minDate: today,
+			weekStartDay: 1,
+			//showRightIcon: true,
+			disableDates:  function (date) {
+                if ( date < today ) {
+					return false;
+				} else {
+					return true;
+				}
+			}
+        });
+    </script>
+  </body>
+</html>
